@@ -5,6 +5,7 @@ A decentralized peer-to-peer (P2P) messaging application built using Node.js. Th
 ## Features
 
 - **Decentralized**: No central server; each instance serves as a node in the network.
+  
 - **Peer Discovery**: Each server maintains a list of peers, allowing users to find other registered users.
   Dynamic Peer Registration: Users register on the network and are discoverable as soon as they go online.
   Scalable: Add as many servers as needed, with each instance communicating with other instances to share network information.
