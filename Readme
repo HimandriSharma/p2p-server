@@ -1,0 +1,52 @@
+# P2P Messaging App
+
+A decentralized peer-to-peer (P2P) messaging application built using Node.js. The app allows users to communicate across a distributed network of servers, with no central authority. Each server in the network maintains a list of peers, enabling users to lookup and communicate with each other once they come online.
+
+## Features
+
+- **Decentralized**: No central server; each instance serves as a node in the network.
+- **Peer Discovery**: Each server maintains a list of peers, allowing users to find other registered users.
+  Dynamic Peer Registration: Users register on the network and are discoverable as soon as they go online.
+  Scalable: Add as many servers as needed, with each instance communicating with other instances to share network information.
+
+### Prerequisites
+
+```
+Node.js (>= 14.x.x)
+NPM or Yarn
+```
+
+### Installation
+
+1. Clone the repository:
+
+   ```
+   git clone git@github.com:HimandriSharma/p2p-server.git
+   cd p2p-messaging-app
+   ```
+
+2. Install dependencies:
+
+   ```
+   yarn install
+   ```
+
+3. Set up the seed server list in seed.ts.
+
+4. Start multiple server instances to simulate a P2P network. Each instance must run on a different port:
+
+    ```
+    PORT=3000 yarn start
+    PORT=3001 yarn start
+    PORT=3002 yarn start
+    ```
+
+### Usage
+- **Run the servers**: Start each instance with a unique port as shown above.
+
+- **Registering Users**: When a user connects, they are registered on the network, becoming discoverable to other peers.
+
+- **Sending Messages**: Users can look up other registered users' IP addresses by querying the network.
+Once a user’s IP is found, messages can be sent directly between peers.
+
+
