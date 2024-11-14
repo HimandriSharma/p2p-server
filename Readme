@@ -9,14 +9,14 @@ A decentralized peer-to-peer (P2P) messaging application built using Node.js. Th
   Dynamic Peer Registration: Users register on the network and are discoverable as soon as they go online.
   Scalable: Add as many servers as needed, with each instance communicating with other instances to share network information.
 
-### Prerequisites
+## Prerequisites
 
 ```
 Node.js (>= 14.x.x)
 NPM or Yarn
 ```
 
-### Installation
+## Installation
 
 1. Clone the repository:
 
@@ -41,7 +41,7 @@ NPM or Yarn
     PORT=3002 yarn start
     ```
 
-### Usage
+## Usage
 - **Run the servers**: Start each instance with a unique port as shown above.
 
 - **Registering Users**: When a user connects, they are registered on the network, becoming discoverable to other peers.
