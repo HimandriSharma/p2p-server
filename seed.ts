@@ -1,6 +1,6 @@
 import { Node } from "./src/servers";
 
 export const seeds: Node[] = [
-  { uri: "http://localhost:4000", user: "seed" },
-  { uri: "http://localhost:8000", user: "seed2" },
+  { uri: "http://seed1:3000", user: "seed1" },
+  { uri: "http://seed2:3000", user: "seed2" },
 ];

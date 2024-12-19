@@ -1,3 +1,3 @@
 export function getCurrentUri() {
-    return `http://localhost:${process.env.PORT}`;
+    return `http://${process.env.USER_NAME}:${process.env.PORT}`;
   }
